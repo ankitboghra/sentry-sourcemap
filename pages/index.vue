@@ -14,7 +14,9 @@
 export default {
   methods: {
     throwError() {
-      this.$sentry.captureException(new Error('v2'))
+      // this.$sentry.captureException(new Error('v6'))
+      // console.log('throwing error');
+      throw new Error('sent-err-5')
     },
   },
 }
